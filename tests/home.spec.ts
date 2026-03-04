@@ -48,7 +48,7 @@ test.describe('Home', () => {
 
     })
 
-    test('Verify heading text is visible using text selector', async ({ page }) => {
+    test('Verify heading text is visible using text selector', async () => {
         //homePage = new HomePage(page);
 
         //open url
@@ -64,7 +64,7 @@ test.describe('Home', () => {
         await expect(headingText).toBeVisible();
     })
     
-    test('Verify home link is enabled using text and CSS Selector', async ({ page }) => {
+    test('Verify home link is enabled using text and CSS Selector', async () => {
         //homePage = new HomePage(page);
 
         //open url
@@ -80,7 +80,7 @@ test.describe('Home', () => {
         await expect(homeText).toBeEnabled();
     })
 
-    test('Verify search icon is visible using xpath selector', async ({ page }) => {
+    test('Verify search icon is visible using xpath selector', async () => {
         //homePage = new HomePage(page);
 
         //open url
@@ -95,7 +95,7 @@ test.describe('Home', () => {
         await expect(searchIcon).toBeVisible();
     })
 
-    test('Verify text for all nav links', async ({ page }) => {
+    test('Verify text for all nav links', async () => {
         //homePage = new HomePage(page);
 
         const expectedLinks = [
